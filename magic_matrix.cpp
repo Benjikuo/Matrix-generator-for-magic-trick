@@ -1,14 +1,14 @@
 #include <iostream>
 #include <string>
-#include <sstream>
 #include <cstdlib>
-#include <ctime>
+#include <chrono>
 using namespace std;
+using namespace chrono;
 
 int base_matrix[4][4] = {
     {0, 7, 9, 14},
     {11, 12, 2, 5},
-    {6, 1, 15, 9},
+    {6, 1, 15, 8},
     {13, 10, 4, 3}
 };
 
@@ -55,6 +55,7 @@ void play() {
     int goal = rand() % (100 - 34 + 1) + 34;
     int user[4][4];
     string str;
+    auto start = high_resolution_clock::now();
 
     cout << "\nTry to enter a magic square with total sum " << goal << " (new/ans/use/exit/help)\n";
     for (int i = 0; i < 4; i++) {
@@ -86,6 +87,7 @@ void play() {
                         }
                         cout << "\nTry to enter a magic square with total sum " << goal << " (new/ans/use/exit/help)\n";
                         cout << "> row" << i + 1 << ": ";
+                        auto start = high_resolution_clock::now();
                     } else if (str == "exit") {
                         return;
                     } else if (str == "help") {
@@ -105,6 +107,9 @@ void play() {
     }
     cout << "\nAns: (* means wrong)\n";
     make(goal, user);
+    auto end = high_resolution_clock::now();
+    duration<double> elapsed = end - start;
+    cout << "Time used: " << elapsed.count() << " seconds\n";
     play();
 }
 
@@ -116,7 +121,7 @@ int main() {
     cout << "\\\\ Welcome to the magic matrix generator //\n";
 
     while (true) {
-        cout << "\nQ: What do you like to do? (make/play/help/exit)\nA: ";
+        cout << "\nQ: What do you like to do? (make/play/exit/help)\nA: ";
         cin >> str;
 
         if (str == "make") {
