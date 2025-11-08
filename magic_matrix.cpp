@@ -6,10 +6,10 @@ using namespace std;
 using namespace chrono;
 
 int base_matrix[4][4] = {
-    {0, 7, 9, 14},
-    {11, 12, 2, 5},
-    {6, 1, 15, 8},
-    {13, 10, 4, 3}
+    {0, 7, 10, 13},
+    {14, 9, 4, 3},
+    {5, 2, 15, 8},
+    {11, 12, 1, 6}
 };
 
 void make(int goal, int user[4][4] = nullptr) {
@@ -22,9 +22,9 @@ void make(int goal, int user[4][4] = nullptr) {
             ans[i][j] = base_matrix[i][j] + n;
 
     ans[0][3] += k;
-    ans[1][1] += k;
+    ans[1][0] += k;
     ans[2][2] += k;
-    ans[3][0] += k;
+    ans[3][1] += k;
 
     if (user == nullptr) {
         for (int i = 0; i < 4; i++) {
