@@ -25,7 +25,7 @@ It helps magicians memorize the mathematical formula used in a mind-reading magi
 
 ## 📂 Project Structure
 ```
-Magic_Matrix/
+Matrix-generator-for-magic-trick/
 ├── image/                # Demonstration gif
 ├── LICENSE               # MIT license
 ├── magic_matrix.cpp      # Main source code (core logic & game loop)
