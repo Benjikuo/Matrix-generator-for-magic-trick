@@ -91,7 +91,7 @@ The magician mentally calculates the numbers in the magic square by substituting
 **Relation Pattern** 
 |   | A      | B      | C      | D |
 |---|--------|--------|--------|---|
-| 1 | m      | A1 + 7 | A2 + 3 | A3 + 3 + k |
+| 1 | m      | A1 + 7 | B1 + 3 | C1 + 3 + k |
 | 2 | D1 + 1 | C1 - 1 | B1 - 3 | A1 + 3 |
 | 3 | C2 + 1 | D2 - 1 | A2 + 1 | B2 - 1 |
 | 4 | D3 + 3 | C3 - 3 | B3 - 1 | A3 + 1 |
