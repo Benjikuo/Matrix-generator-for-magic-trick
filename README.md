@@ -110,7 +110,7 @@ The magician mentally calculates the numbers in the magic square by substituting
 <br>
 
 ## 📜 License
-This project is released under the **MIT License**.  
+Released under the **MIT License**.   
 You are free to modify and use it for learning, personal, or performance purposes.  
 
 **I hope you like the trick. ^_^**
