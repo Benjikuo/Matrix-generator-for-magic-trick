@@ -1,7 +1,7 @@
 # Matrix-generator-for-magic-trick
 
-![License](https://img.shields.io/badge/license-MIT-yellow)
-![Language](https://img.shields.io/badge/language-C%2B%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Language](https://img.shields.io/badge/Language-C%2B%2B-blue)
 
 It helps magicians memorize the mathematical formula used in a mind-reading magic trick.
 
