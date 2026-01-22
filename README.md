@@ -1,4 +1,10 @@
 # Matrix-generator-for-magic-trick
+
+![License](https://img.shields.io/badge/license-MIT-yellow)
+![Language](https://img.shields.io/badge/language-C%2B%2B-blue)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
+![Release](https://img.shields.io/badge/release-v1.0.0-brightgreen)
+
 It helps magicians memorize the mathematical formula used in a mind-reading magic trick.
 
 <p> 
@@ -35,10 +41,10 @@ Magic Matrix/
 
 <br>
 
-## ⚙️ Requirements
-- **Compiler:** C++11 or higher  
-- **Operating System:** Windows / macOS / Linux  
-- **Optional:** Precompiled `magic_matrix.exe` (you can skip compilation if it’s available)
+⚙️ Requirements
+- Compiler: C++11 or higher
+- Operating System: Windows / macOS / Linux (build from source)
+- Optional: Precompiled magic_matrix.exe (Windows only)
 
 <br>
 
